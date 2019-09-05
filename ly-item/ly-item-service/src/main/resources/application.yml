@@ -14,4 +14,6 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1   #可以保证拿到的是IP而不是localhost
-
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

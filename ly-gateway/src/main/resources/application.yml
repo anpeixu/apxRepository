@@ -11,6 +11,10 @@ zuul:
   prefix: /api
   routes:
     item-service: /item/**       #访问网关时 localhost:10010/api/item == localhost:8081/    (item-service的地址)
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      strip-prefix: false
 hystrix:
   command:
     default:
